@@ -35,7 +35,7 @@
  - Russian (C2)
 
 ## Experience
-**Web-designer/developer** 01/2020 to now
+**Web-designer/developer** 01/2020 to nowdays
 **Freelancer**
 
  - create design and [website](https://budmeh.com/) for company of rent building machine  
