@@ -1,5 +1,200 @@
+html {
+  scroll-behavior: smooth; 
+}
+
 body {
-    background: grey;
-    color: black;
+  background-color: #3d3838;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fafafa;
+  }
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .header, .footer { 
+    background-color: #fff8a9;
+    color:#3d3838;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+
+  .nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #3d3838;
+    transition: .3s;
+  }
+
+  .nav-link:hover {
+    color: #5a8f05;
+  }
+
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .section {
+    width: calc(50% - 20px);
+    padding: 10px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #fff8a9;
+  }
+.section p {
+  font-weight: 600;
+}
+.section p span {
+  color:#fff8a9;
+}
+
+  @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #fff8a9;
     
   }
+  .main-title {
+    position: relative;
+    padding: 0;
+    margin-bottom: 20px;
+    color: #fff8a9;
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    line-height: 50px;
+    word-spacing: 3px;
+}
+.main-title::after {
+  content: "";
+  position: absolute;
+  bottom: -19px;
+  left: 50%;
+  margin-left: -70px;
+  width: 140px;
+  height: 2px;
+  background-color: #fff8a9;
+}
+.section-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+  .section-item {
+    position: relative;
+    padding: 0;
+    padding-left: 30px;
+    list-style: none;
+    margin: 0;
+    margin-bottom: 10px;
+  
+  }
+  
+  .section-item::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 10px;
+    height: 10px; 
+    border: 1px solid #829985;
+    border-radius: 50%;
+  }
+
+  .section-item a {
+    text-decoration: none;
+    color: #fff8a9;
+    transition: color 0.5s;
+}
+.section-item span {
+  color: #fff8a9;
+}
+  .section-profile-logo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 60%);
+    filter: grayscale(0.2) brightness(1.05);
+    transition: .3s;
+}
+  
+.section-subtitle {
+    margin-top: 20px;
+    color: #5c5c5c;
+    line-height: 50px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.section-profile {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 50px 30px 35px;
+  border-bottom: 15px solid #fff8a9;
+}
+
+.section-code {
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 35px;
+  
+}
+.section-code h2{
+  display: flex;
+  justify-content: center;
+}
+
+.pre{
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  color: #5c5c5c;
+}
+.logo-rss {
+  width: 121px;
+  height: 45px;
+  background-image: url(./assets/img/rs_school.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer {
+  padding: 20px;
+}
