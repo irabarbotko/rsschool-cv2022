@@ -190,7 +190,7 @@ body {
 .logo-rss {
   width: 121px;
   height: 45px;
-  background-image: url(./img/rs_school.svg);
+  background-image: url(./assets/img/rs_school.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
